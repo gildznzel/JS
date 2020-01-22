@@ -1,0 +1,21 @@
+<head>
+    <title>Example Form</title>
+    <script type="text/javascript">
+        function CheckForBlank() {
+
+            if(document.getElementById('name').value=="") {
+                alert("enter something valid");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <form method="post" onsubmit="return CheckForBlank();">
+        Name: <input type="text" name="name" id="name"/>
+        Age: <input type="text" name="age" id="age"/>
+        Email: <input type="text" name="email" id="email"/>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+</body>
